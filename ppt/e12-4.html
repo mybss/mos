@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft PowerPoint Associate 2019 | Exam MO-300</title>
+    <link rel="stylesheet" href="main.css">  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="time">
+            <div id="img0">
+                <i class="fa-regular fa-clock" style="color: #ffffff;"></i>
+            </div>
+            <div id="timestp">00:59:59</div>
+        </div>
+        <div id="atb">前往考試總表</div>
+        <div id="pj">模擬試題十二 4 / 6 : 非洲動物</div>
+        <div id="resetpj">重新啟動專案</div>
+        <div id="sendpj">提交專案</div>
+        <div id="img1">
+            <img src="icon.png" alt="" height="30px">
+        </div>        
+    </header>
+    <article>
+        <section class="tbtn">
+            <button class="tbtn1"><</button>
+            <button class="tbtn1">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                1
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+            <button class="tbtn1">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                2
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+        
+            <button class="tbtn1">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                3
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+            <button class="tbtn1 atv">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                4
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+            <button class="tbtn1">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                5
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+            <button class="tbtn1">
+                <i class="fa-solid fa-check" style="color: #59d08c;"></i>
+                6
+                <i class="fa-solid fa-flag" style="color: #b70909;"></i>
+                <i class="fa-regular fa-comment-dots" style="color: #222df2;"></i>
+            </button>
+        
+            <button class="tbtn1">></button>
+        </section>
+        <section class="container">在第4張投影片上，使用線上3D模型功能，搜尋"Elephant"，將第一個插入。模型大小重新調整成11.5公分的高度以及12公分寬度。將模型放在項目符號清單的左側。模型的確切位置不重要。</section>
+        <section class="btn">
+            <input type="button" value="標記為'已完成'" class="btn1">
+            <input type="button" value="標記為'待檢閱'" class="btn1">
+            <input type="button" value="標記為'意見反應'" class="btn1">
+        </section>
+    </article>
+    <script>
+        window.onload=function(){
+           // window.location.href="ms-ppt:ofv|u|https://mybss.github.io/mosexcel/book/1.xlsx";
+        
+            t1=document.getElementsByClassName('tbtn1');
+            t2=document.getElementsByClassName('btn1');
+            icon1=document.getElementsByClassName('fa-check');
+            icon2=document.getElementsByClassName('fa-flag');
+            icon3=document.getElementsByClassName('fa-comment-dots');
+            resetpj=document.getElementById('resetpj');
+            sendpj=document.getElementById('sendpj');
+            //localStorage.clear();
+            //全部判斷
+            if(localStorage.getItem("1keyCheck1")==null){icon1[0].style.visibility = "hidden";}else{icon1[0].style.visibility = "visible";} 
+            if(localStorage.getItem("1keyCheck2")==null){icon2[0].style.visibility = "hidden";}else{icon2[0].style.visibility = "visible";} 
+            if(localStorage.getItem("1keyCheck3")==null){icon3[0].style.visibility = "hidden";}else{icon3[0].style.visibility = "visible";} 
+            if(localStorage.getItem("2keyCheck1")==null){icon1[1].style.visibility = "hidden";}else{icon1[1].style.visibility = "visible";} 
+            if(localStorage.getItem("2keyCheck2")==null){icon2[1].style.visibility = "hidden";}else{icon2[1].style.visibility = "visible";} 
+            if(localStorage.getItem("2keyCheck3")==null){icon3[1].style.visibility = "hidden";}else{icon3[1].style.visibility = "visible";}
+        
+            if(localStorage.getItem("3keyCheck1")==null){icon1[2].style.visibility = "hidden";}else{icon1[2].style.visibility = "visible";} 
+            if(localStorage.getItem("3keyCheck2")==null){icon2[2].style.visibility = "hidden";}else{icon2[2].style.visibility = "visible";} 
+            if(localStorage.getItem("3keyCheck3")==null){icon3[2].style.visibility = "hidden";}else{icon3[2].style.visibility = "visible";}
+            if(localStorage.getItem("4keyCheck1")==null){icon1[3].style.visibility = "hidden";}else{icon1[3].style.visibility = "visible";} 
+            if(localStorage.getItem("4keyCheck2")==null){icon2[3].style.visibility = "hidden";}else{icon2[3].style.visibility = "visible";} 
+            if(localStorage.getItem("4keyCheck3")==null){icon3[3].style.visibility = "hidden";}else{icon3[3].style.visibility = "visible";}
+            if(localStorage.getItem("5keyCheck1")==null){icon1[4].style.visibility = "hidden";}else{icon1[4].style.visibility = "visible";} 
+            if(localStorage.getItem("5keyCheck2")==null){icon2[4].style.visibility = "hidden";}else{icon2[4].style.visibility = "visible";} 
+            if(localStorage.getItem("5keyCheck3")==null){icon3[4].style.visibility = "hidden";}else{icon3[4].style.visibility = "visible";}
+            if(localStorage.getItem("6keyCheck1")==null){icon1[5].style.visibility = "hidden";}else{icon1[5].style.visibility = "visible";} 
+            if(localStorage.getItem("6keyCheck2")==null){icon2[5].style.visibility = "hidden";}else{icon2[5].style.visibility = "visible";} 
+            if(localStorage.getItem("6keyCheck3")==null){icon3[5].style.visibility = "hidden";}else{icon3[5].style.visibility = "visible";}
+        
+            //已完成
+            t2[0].onclick=function(){                
+                if(localStorage.getItem("4keyCheck1")==null){
+                    localStorage.setItem("4keyCheck1","show");
+                    icon1[3].style.visibility = "visible";
+                }else{
+                    localStorage.removeItem("4keyCheck1");
+                    icon1[3].style.visibility = "hidden";
+                }                
+            }
+            //待檢閱
+            t2[1].onclick=function(){                
+                if(localStorage.getItem("4keyCheck2")==null){
+                    localStorage.setItem("4keyCheck2","show");
+                    icon2[3].style.visibility = "visible";
+                }else{
+                    localStorage.removeItem("4keyCheck2");
+                    icon2[3].style.visibility = "hidden";
+                }                
+            }
+            //意見反應
+            t2[2].onclick=function(){                
+                if(localStorage.getItem("4keyCheck3")==null){
+                    localStorage.setItem("4keyCheck3","show");
+                    icon3[3].style.visibility = "visible";
+                }else{
+                    localStorage.removeItem("4keyCheck3");
+                    icon3[3].style.visibility = "hidden";
+                }                
+            }
+            //<
+            t1[0].onclick=function(){window.location.href='e12-3.html'}
+            //1
+            t1[1].onclick=function(){window.location.href='e12-1.html'}
+            //2
+            t1[2].onclick=function(){window.location.href='e12-2.html'}
+            //3
+            t1[3].onclick=function(){window.location.href='e12-3.html'}
+            //4
+            t1[4].onclick=function(){window.location.href='e12-4.html'}
+            //5
+            t1[5].onclick=function(){window.location.href='e12-5.html'}
+            //6
+            t1[6].onclick=function(){window.location.href='e12-6.html'}
+            //>
+            t1[7].onclick=function(){window.location.href='e12-5.html'}
+            //重新啟動
+            resetpj.onclick=function(){window.location.href="ms-ppt:ofv|u|https://mybss.github.io/mos/ppt/book/e12-1.pptx";localStorage.clear();}
+            //提交
+            sendpj.onclick=function(){window.location.href='e13-1.html';localStorage.clear();}
+        }
+    </script>
+</body>
+</html>
